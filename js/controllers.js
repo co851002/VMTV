@@ -63,7 +63,7 @@ function CardTableTestCtrl($scope, $http, CardTableService, TrelloDataService) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*----------------------------------------------------------------------------------------------------*/
-/*function PowerCardCtrl($scope, $routeParams, PowerCardService, TrelloDataService) {
+function PowerCardCtrl($scope, $routeParams, PowerCardService, TrelloDataService) {
 	if ( !$routeParams.cardId ) {
 		$scope.model = { ready: true };
 		return;
@@ -71,4 +71,4 @@ function CardTableTestCtrl($scope, $http, CardTableService, TrelloDataService) {
 
 	PowerCardService.loadCardData(TrelloDataService, $scope, $routeParams.cardId);
 	$scope.model = TrelloDataService.model();
-}*/
+}

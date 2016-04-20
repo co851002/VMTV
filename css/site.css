@@ -2,12 +2,24 @@
 .smallText {
 	font-size: 0.8em;
 }
+th {
+    /* border: 1px solid red!important; */
+}
+
+td {
+    /* border:1px solid red!important; */
+    box-shadow: 1px 0px 0px 0px rgba(43, 166, 203, 0.17);
+}
 
 .smallLabel {
 	font-size: 0.7em;
 	text-transform: uppercase;
 	color: #888;
 	margin-bottom: 0;
+}
+.row {
+
+    max-width: 67.5em!important;
 }
 
 ul, ol {

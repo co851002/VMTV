@@ -15,9 +15,8 @@
 			{{model.data.username}}
 		</p>
 	</div>
-	
-	<div class="large-9 columns">
 
+	<div class="large-9 columns">
 		<h5>
 			My Boards
 		</h5>
@@ -27,9 +26,18 @@
 				<a href="#/cardtable/board/{{board.id}}" target="_self">{{board.name}}</a>
 			</li>
 		</ul>
-		
 
-		
+		<!--<div ng-repeat="org in model.data.organizations">
+			<h5>
+				{{org.displayName}}
+			</h5>
+
+			<ul class="square">
+				<li ng-repeat="board in model.data.boards | filter:{idOrganization: org.id}">
+					<a href="#/cardtable/board/{{board.id}}" target="_self">{{board.name}}</a>
+				</li>
+			</ul>
+		</div>-->
 	</div>
 
 </div>

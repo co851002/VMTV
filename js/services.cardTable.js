@@ -63,7 +63,7 @@ TrelloVisionApp.factory('CardTableService', function() {
 				return true;
 			};
 		};
-		
+
 		scope.onSort = function(sortProp) {
 			if ( scope.sortProp == sortProp ) {
 				if ( scope.sortRev ) {
@@ -119,7 +119,9 @@ function buildCardTable(scope) {
 		board: board,
 		org: board.organization,
 		members: board.members,
-		labelColors: ['green', 'yellow', 'orange', 'red', 'purple', 'blue'],
+		//labelColors: ['green', 'yellow', 'orange', 'red', 'purple', 'blue','sky','lime','pink','black'  ],
+		labelColors: ['blue', 'orange','black'  ],
+
 		labelMap: board.labelNames,
 		listIds: [],
 		listMap: {},

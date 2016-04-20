@@ -4,8 +4,8 @@ var TrelloVisionApp = angular
 	.config(['$routeProvider', buildRoutes]);
 
 var TrelloVisionModules = [
-	{ name: 'Overview', uri: '/overview' },
-	//{ name: 'CardTable', uri: '/cardtable' }
+	{ name: 'Overview', uri: '/overview' }
+	//{ name: 'CardTable', uri: '/cardtable' },
 	//{ name: 'PowerCard', uri: '/powercard' }
 ];
 
@@ -31,7 +31,7 @@ function buildRoutes($routeProvider) {
 			controller: CardTableCtrl
 		})
 		/*.when('/cardtable/test', {
-			templateUrl: 'views/cardtable-board.html', 
+			templateUrl: 'views/cardtable-board.html',
 			controller: CardTableTestCtrl
 		})*/
 		.when('/cardtable/board/:boardId/csv', {
@@ -42,14 +42,14 @@ function buildRoutes($routeProvider) {
 			templateUrl: 'views/cardtable-board.html',
 			controller: CardTableCtrl
 		})
-		/*.when('/powercard', {
+		.when('/powercard', {
 			templateUrl: 'views/powercard.html',
 			controller: PowerCardCtrl
 		})
 		.when('/powercard/:cardId', {
 			templateUrl: 'views/powercard-data.html',
 			controller: PowerCardCtrl
-		})*/
+		})
 		.otherwise({
 			redirectTo: '/'
 		});
